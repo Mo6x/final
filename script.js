@@ -1540,9 +1540,37 @@ console.log(
 
 console.log(new set('christopherMoses').set);
 
+const rest = new Map();
+rest.set('name', 'classico italiano');
+rest.set(1, 'firenze, italy');
+console.log(rest.set(2, 'lisbon, portugal'));
 
+rest
+.set('categories', ['talian, pizzeria',
+'vegetarian, organic'])
+set('open', 11)
+set('close', 23)
+set(true, 'we are open :D')
+set(false, 'we are close :(');
 
+console.log(rest.get('name'));
+console.log(rest.get(true));
+console.log(rest.get(1));
 
+const time = 8;
+console.log(rest.get(time > rest.get('open') && time 
+< rest.get('close')));
+
+console.log(rest.has('categories'));
+rest.delete(2);
+// rest.clear();
+
+const arr = [1, 2];
+rest.set(arr, 'text');
+rest.set(document.querySelector('hi'), 'heading');
+console.log(rest);
+console.log(rest.size);
+console.log(rest.get(arr));
 
 
 
